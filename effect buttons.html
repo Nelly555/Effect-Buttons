@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Starting head-->
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="siteroot/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Digital Clock</title> 
+
+    <!--Bootstap4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<!--poroject-->
+<body>
+    <p>Make dropped effect Button HTML CSS and Java script</p>
+    <a href="#" id="buttons">Button</a>
+    <a href="#" id= "buttons">Button</a>
+    <!--Start Js-->
+    <script>
+        const buttons = document.querySelectorAll("a");
+        buttons.forEach(btn=>{
+            btn.addEventListener("click", function(e){
+            let x = e.clientX-
+            e.target.offsetleft;
+            let y = e.clientY-
+            e.target.offsetleftTop;
+            let ripples = document.createElement("span");
+            ripples.style.left= x + "px"; 
+            ripples.style.top = y + "px";
+            this.appendChild(ripples);
+            setTimeout(()=>{
+                ripples.remove();
+            },1000);
+
+            })
+        });
+        
+    </script>
+
+
+</body>
+</html>

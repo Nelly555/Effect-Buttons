@@ -1,0 +1,63 @@
+body{
+    background: #000;
+}
+.buttons{
+    width: 100px;
+    height: 50px;
+    border: 0.2px solid yellow;
+    margin: 100px 10px;
+    padding: 10px 30px;
+    background: linear-gradient(90 #99e7fc, #0D4368);
+    outline: none;
+}
+.buttons,a{
+    position: relative;
+    left: 70px;
+    border: none;
+    outline: none;
+    background: transparent;
+    overflow: hidden;
+    letter-spacing: 2px;
+    line-height: 40px;
+    transition: all .3s;
+    display: block;
+    text-decoration:none;
+    text-align:center;
+    color: #99e7fc;
+    text-shadow: 0px 2px 5px rgba(0. 0. 0.6);
+    background: linear-gradient(180deg, #122DFF8A, #1c301AD6);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.buttons:focus{
+    color:#94FFA5c4;
+}
+a:nth-child(2){
+    background: linear-gradient(90deg , #99e7fc , #0D4368);
+}
+span{
+    position: absolute;
+    background: #1AFF039E;
+    transform: translate(-40%, -40%);
+    pointer-events: none;
+    border-radius: 100%;
+    animation:animate 1s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0,5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0.2;
+    }
+}
+p{
+    font-size: 1, 7rem;
+    font-weight: bold;
+    color: #ff0017;
+    text-align: center;
+}
